@@ -52,4 +52,36 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.page-container {
+  display: grid;
+  grid-template-areas: "main-library aside-statistics";
+  grid-template-columns: 4fr minmax(300px, 1fr);
+  grid-template-rows: 1fr;
+  height: 100%;
+  width: 100%;
+}
+.page-container main {
+  border: 3px solid lightslategray;
+  grid-area: main-library;
+  height: 100%;
+  width: 100%;
+}
+.page-container aside {
+  border: 3px solid lightpink;
+  grid-area: aside-statistics;
+  height: 100%;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
