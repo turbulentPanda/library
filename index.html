@@ -17,7 +17,67 @@
                     <div class="book-icon-container"></div>
                     <h1>My Library</h1>
                 </header>
+                <img src="" alt="" class="profile-picture">
+                <form action="" class="add-book-form">
+                    <label for="book-title" class="form-label"></label>
+                    <input type="text" class="form-input" name="book-title" id="book-title" placeholder="Title of Book"
+                        required>
 
+                    <label for="book-author" class="form-label"></label>
+                    <input type="text" class="form-input" name="book-author" id="book-author"
+                        placeholder="Author of Book" required>
+
+                    <label for="page-number" class="form-label"></label>
+                    <input type="number" class="form-input" id="page-number" name="page-number"
+                        placeholder="Number of Pages" required min="1">
+
+                    <label for="book-genre" class="form-label"></label>
+                    <select name="book-genre" id="book-genre">
+                        <option value="">
+                            Genre of Book
+                        </option>
+                        <option value="autobiography">
+                            Autobiography, Biography, or Memoir
+                        </option>
+                        <option value="fantasy">
+                            Fantasy
+                        </option>
+                        <option value="fiction-children">
+                            Fiction - Children's
+                        </option>
+                        <option value="fiction-science">
+                            Fiction - Science
+                        </option>
+                        <option value="fiction-other">
+                            Fiction - Other
+                        </option>
+                        <option value="mystery">
+                            Mystery
+                        </option>
+                        <option value="romance">
+                            Romance
+                        </option>
+                        <option value="self-help">
+                            Self-Help
+                        </option>
+                        <option value="thriller">
+                            Thriller or Horror
+                        </option>
+                        <option value="young-adult">
+                            Young Adult
+                        </option>
+                        <option value="other">
+                            Other
+                        </option>
+                    </select>
+
+                    <input type="checkbox" name="read-status" id="read-status">
+                    <label for="read-status">I have finished this book!</label>
+
+                    <button type="submit">
+                        ADD A NEW BOOK
+                    </button>
+                </form>
             </section>
             <section class=" book-library">
 
