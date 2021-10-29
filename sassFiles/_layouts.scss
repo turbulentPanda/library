@@ -12,7 +12,7 @@ body {
 .page-container {
     display: grid;
     grid-template-areas: 
-        "main-library aside-statistics";
+        "main-library   aside-statistics";
     grid-template-columns: 4fr minmax(300px, 1fr);
     grid-template-rows: 1fr;
     height: 100%;
@@ -20,9 +20,23 @@ body {
 
     main {
         border: 3px solid lightslategray;
+        display: grid;
         grid-area: main-library;
+        grid-template-areas: 
+            "about-and-add   book-library";
+        grid-template-columns: minmax(200px, 1fr) 3fr;
         height: 100%;
         width: 100%;
+
+        .about-and-add {
+            border: 1px solid blue;
+            grid-area: about-and-add;
+        }
+
+        .book-library {
+            border: 1px solid green;
+            grid-area: book-library;
+        }
     }
 
     aside {
