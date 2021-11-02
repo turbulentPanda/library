@@ -59,6 +59,7 @@ table {
 }
 
 body {
+  color: #fff;
   height: 100vh;
   width: 100vw;
 }
@@ -69,41 +70,52 @@ body {
   grid-template-columns: 4fr minmax(300px, 1fr);
   grid-template-rows: 1fr;
   height: 100%;
-  padding: 1.5%;
   width: 100%;
 }
 .page-container main {
-  border: 3px solid lightslategray;
+  background-image: linear-gradient(rgba(7, 13, 32, 0.8), rgba(0, 0, 0, 0.8)), url("assets/stars.jpg");
   display: grid;
   grid-area: main-library;
   grid-template-areas: "about-and-add   book-library";
   grid-template-columns: minmax(300px, 1fr) minmax(500px, 3fr);
+  grid-template-rows: 1fr;
   height: 100%;
   width: 100%;
 }
 .page-container main .about-and-add {
-  border: 1px solid blue;
   display: grid;
   gap: 10%;
-  grid-template-areas: "header" "profile-picture" "add-book-borm";
+  grid-template-areas: "header" "profile-picture" "add-book-borm" "corner-image-container";
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: repeat(4, max-content);
   grid-area: about-and-add;
+  height: 100%;
   justify-items: center;
+  padding: 30px;
+  width: 100%;
 }
 .page-container main .about-and-add form {
   display: grid;
   gap: 20px;
 }
+.page-container main .about-and-add .corner-image-container {
+  bottom: 0;
+  background: url("assets/tree.webp");
+  background-size: cover;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  width: 200px;
+}
 .page-container main .book-library {
-  border: 1px solid green;
   grid-area: book-library;
+  padding: 30px;
 }
 .page-container aside {
-  border: 3px solid lightpink;
   grid-area: aside-statistics;
   height: 100%;
   width: 100%;
+  padding: 30px;
 }
 
 .checkbox-container {
@@ -112,6 +124,10 @@ body {
   gap: 10px;
   grid-template-columns: max-content max-content;
   justify-content: space-between;
+}
+
+.aside-statistics {
+  background: #241a33;
 }
 
 /*# sourceMappingURL=styles.css.map */
