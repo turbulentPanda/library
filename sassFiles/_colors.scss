@@ -72,4 +72,8 @@ progress {
 
 .aside-statistics {
     background: $secondary-color;
+    
+    h2 {
+        color: $accent-color;
+    }
 }

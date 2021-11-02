@@ -163,6 +163,9 @@ progress {
 .aside-statistics {
   background: #fbf5ee;
 }
+.aside-statistics h2 {
+  color: #623b5a;
+}
 
 * {
   box-sizing: border-box;
