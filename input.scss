@@ -1,10 +1,12 @@
 @use 'sassFiles/reset';
 
-@use 'sassFiles/layouts';
+@use 'sassFiles/fonts';
 
 @use 'sassFiles/form';
 
 @use 'sassFiles/colors';
+
+@use 'sassFiles/layouts';
 
 .main-library {
     border-radius: 0 40px 40px 0;

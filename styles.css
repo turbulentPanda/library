@@ -52,6 +52,80 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.username {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.email {
+  font-weight: 300;
+}
+
+button {
+  font-weight: 600;
+}
+
+.add-book-form input,
+.add-book-form select,
+.add-book-form textarea,
+.add-book-form button {
+  border: none;
+  height: 35px;
+  padding: 10px;
+}
+.add-book-form textarea {
+  height: 175px;
+}
+.add-book-form button {
+  height: 35px;
+}
+
+body {
+  background-color: #fbf5ee;
+}
+
+.main-library {
+  background: #fff;
+  color: #623b5a;
+}
+.main-library form input,
+.main-library form select,
+.main-library form textarea {
+  accent-color: #623b5a;
+  background: #fbf5ee;
+  color: #3e2539;
+  outline-color: #623b5a;
+}
+.main-library form input::placeholder,
+.main-library form select:invalid,
+.main-library form textarea::placeholder {
+  color: rgba(62, 37, 57, 0.6);
+}
+.main-library form button {
+  background: #623b5a;
+  color: #fff;
+}
+.main-library form button:hover {
+  filter: brightness(0.8);
+}
+
+.aside-statistics {
+  background: #fbf5ee;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -76,15 +150,16 @@ body {
   display: grid;
   grid-area: main-library;
   grid-template-areas: "about-and-add   book-library";
-  grid-template-columns: minmax(300px, 1fr) minmax(500px, 3fr);
+  grid-template-columns: minmax(max-content, 1fr) minmax(500px, 3fr);
   grid-template-rows: 1fr;
   height: 100%;
   padding: 3%;
   width: 100%;
 }
 .page-container main .about-and-add {
+  align-content: space-between;
   display: grid;
-  gap: 5%;
+  gap: 2%;
   grid-template-areas: "header" "profile-picture" "add-book-form";
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, max-content);
@@ -101,6 +176,8 @@ body {
   gap: 15px;
   grid-area: profile-picture;
   justify-content: center;
+  line-height: 20px;
+  place-items: center;
   text-align: center;
 }
 .page-container main .about-and-add figure .profile-picture {
@@ -133,52 +210,6 @@ body {
   grid-template-columns: max-content max-content;
   justify-content: space-between;
   letter-spacing: 1px;
-}
-
-.add-book-form input,
-.add-book-form select,
-.add-book-form textarea,
-.add-book-form button {
-  border: none;
-  height: 35px;
-  padding: 10px;
-}
-.add-book-form textarea {
-  height: 175px;
-}
-.add-book-form button {
-  height: 35px;
-}
-
-body {
-  background-color: #fbf5ee;
-}
-
-.main-library {
-  background: #fff;
-  color: #3e2539;
-}
-.main-library form input,
-.main-library form select,
-.main-library form textarea {
-  background: #fbf5ee;
-  color: #3e2539;
-}
-.main-library form input::placeholder,
-.main-library form select:invalid,
-.main-library form textarea::placeholder {
-  color: rgba(62, 37, 57, 0.6);
-}
-.main-library form button {
-  background: #623b5a;
-  color: #fff;
-}
-.main-library form button:hover {
-  filter: brightness(0.8);
-}
-
-.aside-statistics {
-  background: #fbf5ee;
 }
 
 .main-library {

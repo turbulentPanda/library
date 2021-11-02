@@ -1,6 +1,7 @@
 $primary-color: #fff;
 $secondary-color: #fbf5ee;
-$accent-color: #3e2539;
+$accent-color: #623b5a;
+$text-color: #3e2539;
 
 body {
     background-color: $secondary-color;
@@ -14,8 +15,10 @@ body {
         input,
         select,
         textarea {
+            accent-color: #623b5a;
             background: $secondary-color;
-            color: $accent-color;
+            color: $text-color;
+            outline-color: $accent-color;
         }
 
         input::placeholder,
@@ -32,6 +35,7 @@ body {
         button:hover {
             filter: brightness(.8);
         }
+
 
     }
 }
