@@ -45,6 +45,7 @@ body {
             grid-area: about-and-add;
             height: 100%;
             justify-items: center;
+            padding-right: 5%;
             width: 100%;
             
             .about-header {
@@ -77,8 +78,41 @@ body {
         }
 
         .book-library {
+            display: grid;
+            gap: 5%;
             grid-area: book-library;
-            padding: 30px;
+            grid-template-areas: 
+                "header"
+                "books";
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content 1fr;
+            height: 100%;
+            padding-left: 2.5%;
+            width: 100%;
+
+            header {
+                grid-area: header;
+
+                h2 {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .books {
+                align-content: start;
+                grid-area: books;
+                display: grid;
+                gap:  50px 2%;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-auto-flow: row;
+                justify-content: space-between;
+    
+                .book {
+                    display: grid;
+                    padding: 20px;
+                }
+
+            }
         }
     }
 

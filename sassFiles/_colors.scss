@@ -35,10 +35,40 @@ body {
         button:hover {
             filter: brightness(.8);
         }
+    }
 
+    .book {
+        color: $primary-color;
+    }
 
+    .book[data-number="1"],
+    .book[data-number="6"] {
+        background: #623b5a;
+    }
+
+    .book[data-number="2"],
+    .book[data-number="7"] {
+        background: #de7c5a;
+    }
+
+    .book[data-number="3"] {
+        background: #76949f;
+    }
+
+    .book[data-number="4"] {
+        background: #e26d5a;
+    }
+
+    .book[data-number="5"] {
+        background-color: #a491d3;
     }
 }
+
+
+progress {
+    accent-color: $primary-color;
+}
+
 
 .aside-statistics {
     background: $secondary-color;
