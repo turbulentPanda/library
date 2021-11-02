@@ -1,0 +1,41 @@
+$primary-color: #fff;
+$secondary-color: #fbf5ee;
+$accent-color: #35133e;
+
+body {
+    background-color: $secondary-color;
+}
+
+
+.main-library {
+    background: $primary-color;
+    color: $accent-color;
+    form {
+        input,
+        select,
+        textarea {
+            background: $secondary-color;
+            color: $accent-color;
+        }
+
+        input::placeholder,
+        select:invalid,
+        textarea::placeholder {
+            color: rgba(53, 19, 62, .6);
+        }
+
+        button {
+            background: #623b5a;
+            color: $primary-color;
+        }
+
+        button:hover {
+            filter: brightness(.8);
+        }
+
+    }
+}
+
+.aside-statistics {
+    background: $secondary-color;
+}

@@ -32,8 +32,8 @@
                         placeholder="Number of Pages" required min="1">
 
                     <label for="book-genre" class="form-label"></label>
-                    <select name="book-genre" id="book-genre">
-                        <option value="">
+                    <select name="book-genre" id="book-genre" required>
+                        <option value="" disabled selected>
                             Genre of Book
                         </option>
                         <option value="autobiography">
@@ -71,6 +71,9 @@
                         </option>
                     </select>
 
+                    <textarea name="about-book" id="about-book" cols="30" rows="10"
+                        placeholder="Brief description of book (optional)"></textarea>
+
                     <div class="checkbox-container">
                         <input type="checkbox" name="read-status" id="read-status">
                         <label for="read-status">I have already finished this book!</label>
@@ -80,9 +83,6 @@
                         ADD A NEW BOOK
                     </button>
                 </form>
-                <div class="corner-image-container">
-
-                </div>
             </section>
             <section class=" book-library">
 

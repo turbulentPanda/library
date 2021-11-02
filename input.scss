@@ -1,3 +1,23 @@
 @use 'sassFiles/reset';
 
 @use 'sassFiles/layouts';
+
+@use 'sassFiles/form';
+
+@use 'sassFiles/colors';
+
+.main-library {
+    border-radius: 0 40px 40px 0;
+    .about-and-add {
+        border-right: 1px solid #e3e3e3;
+    }
+}
+
+.add-book-form {
+    input,
+    select,
+    textarea,
+    button {
+        border-radius: 6px;
+    }
+}

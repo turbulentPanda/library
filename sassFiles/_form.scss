@@ -1,0 +1,22 @@
+
+$input-height: 35px;
+
+.add-book-form {
+    input,
+    select,
+    textarea,
+    button {
+        border: none;
+        height: $input-height;
+        padding: 10px;
+    }
+
+    textarea {
+        height: 175px;
+    }
+
+    button {
+        height: $input-height;
+    }
+
+}
