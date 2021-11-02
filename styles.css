@@ -305,6 +305,12 @@ body {
 .add-book-form button {
   border-radius: 6px;
 }
+.add-book-form select,
+.add-book-form input[type=checkbox],
+.add-book-form label[for=read-status],
+.add-book-form button {
+  cursor: pointer;
+}
 
 .books .book {
   border-radius: 20px;

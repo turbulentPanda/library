@@ -22,6 +22,13 @@
     button {
         border-radius: 6px;
     }
+
+    select,
+    input[type="checkbox"],
+    label[for="read-status"],
+    button {
+        cursor: pointer;
+    }
 }
 
 .books {
