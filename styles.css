@@ -84,7 +84,7 @@ body {
 }
 .page-container main .about-and-add {
   display: grid;
-  gap: 10%;
+  gap: 5%;
   grid-template-areas: "header" "profile-picture" "add-book-form";
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, max-content);
@@ -93,9 +93,27 @@ body {
   justify-items: center;
   width: 100%;
 }
+.page-container main .about-and-add .about-header {
+  grid-area: header;
+}
+.page-container main .about-and-add figure {
+  display: grid;
+  gap: 15px;
+  grid-area: profile-picture;
+  justify-content: center;
+  text-align: center;
+}
+.page-container main .about-and-add figure .profile-picture {
+  background: url("assets/corgi.jpg") 0 -70px no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
 .page-container main .about-and-add form {
   display: grid;
   gap: 20px;
+  grid-area: add-book-form;
 }
 .page-container main .book-library {
   grid-area: book-library;
@@ -114,6 +132,7 @@ body {
   gap: 10px;
   grid-template-columns: max-content max-content;
   justify-content: space-between;
+  letter-spacing: 1px;
 }
 
 .add-book-form input,
@@ -137,18 +156,18 @@ body {
 
 .main-library {
   background: #fff;
-  color: #35133e;
+  color: #3e2539;
 }
 .main-library form input,
 .main-library form select,
 .main-library form textarea {
   background: #fbf5ee;
-  color: #35133e;
+  color: #3e2539;
 }
 .main-library form input::placeholder,
 .main-library form select:invalid,
 .main-library form textarea::placeholder {
-  color: rgba(53, 19, 62, 0.6);
+  color: rgba(62, 37, 57, 0.6);
 }
 .main-library form button {
   background: #623b5a;

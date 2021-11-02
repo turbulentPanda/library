@@ -34,7 +34,7 @@ body {
         .about-and-add {
             // border: 1px solid blue;
             display: grid;
-            gap: 10%;
+            gap: 5%;
             grid-template-areas:
                 "header"
                 "profile-picture"
@@ -45,10 +45,31 @@ body {
             height: 100%;
             justify-items: center;
             width: 100%;
+            
+            .about-header {
+                grid-area: header;
+            }
+
+            figure {
+                display: grid;
+                gap: 15px;
+                grid-area: profile-picture;
+                justify-content: center;
+                text-align: center;
+                
+                .profile-picture {
+                    background: url('assets/corgi.jpg') 0 -70px no-repeat;
+                    background-size: cover;
+                    border-radius: 50%;
+                    height: 150px;
+                    width: 150px;
+                }
+            }
 
             form {
                 display: grid;
                 gap: 20px;
+                grid-area: add-book-form;
             }
         }
 
@@ -73,5 +94,6 @@ body {
     gap: 10px;
     grid-template-columns: max-content max-content;
     justify-content: space-between;
+    letter-spacing: 1px;
 }
 

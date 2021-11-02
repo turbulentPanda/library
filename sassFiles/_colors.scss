@@ -1,6 +1,6 @@
 $primary-color: #fff;
 $secondary-color: #fbf5ee;
-$accent-color: #35133e;
+$accent-color: #3e2539;
 
 body {
     background-color: $secondary-color;
@@ -21,7 +21,7 @@ body {
         input::placeholder,
         select:invalid,
         textarea::placeholder {
-            color: rgba(53, 19, 62, .6);
+            color: rgba(62, 37, 57, .6);
         }
 
         button {
