@@ -22,6 +22,10 @@ const data = {
 };
 
 const options = {
+    animation: {
+        duration: 1150,
+    },
+
     plugins: {
         legend: {
             position: 'bottom',
