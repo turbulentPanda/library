@@ -8,6 +8,8 @@
 
 @use 'sassFiles/layouts';
 
+@use 'sassFiles/charts';
+
 .main-library {
     border-radius: 0 40px 40px 0;
     .about-and-add {
@@ -42,4 +44,14 @@
     .book:hover {
         transform: scale(1.1);
     }
+}
+
+.book-count-progressbar {
+    height: 65%;
+    width: 65%;
+}
+
+.book-genre-chart {
+    height: 75%;
+    width: 75%;
 }

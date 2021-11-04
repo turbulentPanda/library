@@ -337,4 +337,14 @@ body {
   transform: scale(1.1);
 }
 
+.book-count-progressbar {
+  height: 65%;
+  width: 65%;
+}
+
+.book-genre-chart {
+  height: 75%;
+  width: 75%;
+}
+
 /*# sourceMappingURL=styles.css.map */

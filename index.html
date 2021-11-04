@@ -228,19 +228,36 @@
             </h2>
             <section class="book-count-section">
                 <p>
-                    <span class="total-book-count">7</span> Books on Your Shelf. <br>
-                    <span class="finished-book-count">4</span> Books Read. <br>
+                    <span class="total-book-count">7</span> Books on Your Shelf.
+                </p>
+                <p>
+                    <span class="finished-book-count">4</span> Books Read.
+                </p>
+                <p>
                     <span class="unfinished-book-count">3</span> Books unread.
                 </p>
                 <div class="book-count-progressbar"></div>
             </section>
-            <p>
-
+            <p class="page-count-section">
+                You have read <span class="finished-page-count">1421</span> pages.
             </p>
+            <section class="genre-statistics">
+                <p>
+                    Your favorite genre is <span class="favorite-genre">Fantasy</span>
+                </p>
+                <p>
+                    Here's a distribution of the genres you read:
+                    <canvas class="book-genre-chart">
+
+                    </canvas>
+                </p>
+            </section>
         </aside>
     </div>
     <script src="node_modules/progressbar.js/dist/progressbar.min.js"></script>
     <script src="progressbars.js"></script>
+    <script src="node_modules/chart.js/dist/chart.js"></script>
+    <script src="charts.js"></script>
     <script src="scripts.js"></script>
 </body>
 
